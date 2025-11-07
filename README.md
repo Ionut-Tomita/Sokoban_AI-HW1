@@ -1,6 +1,6 @@
 # Compararea algoritmilor Beam Search și IDA* pentru Sokoban
 
-## Descriere
+## 🧩 Descriere
 Acest proiect implementează și compară doi algoritmi de căutare (Beam Search și IDA*) pentru rezolvarea jocului **Sokoban**, în varianta standard **push-only**. Proiectul explorează impactul diferitelor euristici asupra eficienței și complexității algoritmilor.
 
 - **Beam Search:** folosește o euristică bazată pe distanța Manhattan, matching greedy între cutii și ținte, și detectarea deadlock-urilor.
@@ -10,7 +10,7 @@ Toate mișcările de „pull” sunt dezactivate pentru a respecta specificația
 
 ---
 
-## Structura proiectului
+## 🔍 Structura proiectului
 - `src/` – codul sursă Python pentru implementarea algoritmilor.
 - `maps/` – hărți Sokoban utilizate pentru testare.
 - `results/` – grafice și statistici despre numărul de stări explorate și timpul de execuție.
@@ -18,7 +18,7 @@ Toate mișcările de „pull” sunt dezactivate pentru a respecta specificația
 
 ---
 
-## Detalii implementare
+## 🔧 Detalii implementare
 
 ### Restricții
 - Jocul este în varianta **push-only** (nu sunt permise mișcări de „pull”).
@@ -52,7 +52,7 @@ Toate mișcările de „pull” sunt dezactivate pentru a respecta specificația
 
 ---
 
-## Observații și concluzii
+## 🎯 Observații și concluzii
 - Alegerea unei euristici eficiente (Manhattan + matching + deadlock) reduce drastic numărul de stări explorate și timpul de execuție.
 - Beam Search este sensibil la lățimea beam-ului și numărul de succesori generați.
 - IDA* necesită euristici bine calibrate pentru a evita explorarea excesivă a stărilor redundante.
